@@ -1,17 +1,20 @@
-import Image from "next/image";
 import { ArrowDown, ShieldCheck, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen overflow-hidden bg-navy text-white">
-      <Image
-        src="/og-cover.jpg"
-        alt="Professional house cleaner wiping kitchen bench in Toorak home"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/og-cover.jpg"
+        aria-label="Woman cleaning a bright home interior"
+      >
+        <source src="https://videos.pexels.com/video-files/7641648/7641648-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-navy/70" />
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/25" />
       <div className="container-pad relative flex min-h-screen items-center pb-16 pt-28">
