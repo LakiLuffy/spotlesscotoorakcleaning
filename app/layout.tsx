@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     images: ["/og-cover.jpg"]
   },
   icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg"
+    icon: "/logo.png",
+    apple: "/logo.png"
   }
 };
 
